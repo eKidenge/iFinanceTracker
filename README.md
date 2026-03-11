@@ -7,7 +7,7 @@ A robust, production-grade iOS expense tracking application demonstrating advanc
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-## 📱 Overview
+## Overview
 
 iFinanceTracker is a feature-complete personal finance management tool built to exemplify production-ready iOS development. It goes beyond a simple tutorial app by implementing a layered MVVM architecture, sophisticated data persistence with Core Data, and a reactive UI using Combine and UIKit. This project serves as a portfolio piece demonstrating my ability to build complex, maintainable, and scalable iOS applications.
 
