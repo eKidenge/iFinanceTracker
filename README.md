@@ -13,7 +13,7 @@ iFinanceTracker is a feature-complete personal finance management tool built to 
 
 The app allows users to meticulously log expenses, categorize them, and gain insights through a visual dashboard, including a custom-drawn pie chart. It handles the full CRUD lifecycle with a focus on data integrity and a smooth user experience.
 
-## ✨ Key Features
+## Key Features
 
 *   **Complete Expense Management**: Create, read, update, and delete expense logs with details like title, amount, date, and category.
 *   **Advanced Filtering & Search**: Filter the expense list by user-defined categories and a real-time search query across log titles and notes.
@@ -25,7 +25,7 @@ The app allows users to meticulously log expenses, categorize them, and gain ins
 *   **Data Persistence**: All data is securely stored locally using Core Data, providing offline access and reliable performance. The Core Data stack is implemented as a singleton for efficient sharing across the app.
 *   **Responsive UI**: Built with a mix of UIKit for complex, data-driven views and SwiftUI components for modern, declarative UI elements where appropriate.
 
-## 🏗 Architecture: MVVM-C
+## Architecture: MVVM-C
 
 This project is meticulously structured following the **Model-View-ViewModel (MVVM)** architectural pattern, coordinated by a **Coordinator** pattern for navigation. This ensures a clean separation of concerns, testability, and maintainability.
 
@@ -43,7 +43,7 @@ This project is meticulously structured following the **Model-View-ViewModel (MV
 *   **Coordinator**:
     *   `MainCoordinator` handles all navigation logic, removing this responsibility from ViewControllers and making the flow of the app easier to manage and test.
 
-## 🛠 Technology Stack
+## Technology Stack
 
 | Technology | Purpose |
 | :--- | :--- |
@@ -56,7 +56,7 @@ This project is meticulously structured following the **Model-View-ViewModel (MV
 | **URLSession** | For making network requests (e.g., fetching live currency rates) and handling JSON data with `Codable`. |
 | **XCTest** | For writing unit tests to validate business logic in ViewModels and integration tests for data persistence. |
 
-## 📂 Project Structure
+## Project Structure
 
 A peek into the organized file structure of the project:
 
@@ -118,7 +118,7 @@ iFinanceTracker/
 └── promo.png
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -148,7 +148,7 @@ These instructions will get you a copy of the project up and running on your loc
     *   Select your target device or simulator.
     *   Press `Cmd + R` to build and run the application.
 
-## 🧪 Running the Tests
+## Running the Tests
 
 This project includes a suite of unit and UI tests to ensure reliability.
 
@@ -161,18 +161,18 @@ This project includes a suite of unit and UI tests to ensure reliability.
 *   **Core Data Integration Tests**: Verify that data is correctly saved, fetched, and deleted without corruption.
 *   **UI Tests**: Ensure critical user journeys (e.g., adding a new expense, viewing the dashboard) function as expected.
 
-## 💡 Key Implementation Highlights
+## Key Implementation Highlights
 
 *   **Reactive UI with Combine**: ViewModels expose `@Published` properties. ViewControllers subscribe to these publishers using `sink` or assign them to UI elements (e.g., `UILabel.text`), ensuring the UI is always in sync with the underlying data without manual updates.
 *   **Efficient List Management with `NSFetchedResultsController`**: The `LogListViewController` utilizes an `NSFetchedResultsController` to observe changes in the Core Data `ExpenseLog` entity. This provides optimal performance by automatically updating the `UITableView` when logs are added, deleted, or modified, including smooth animations.
 *   **Custom Pie Chart with Core Graphics**: Instead of using a third-party library, the dashboard's pie chart is drawn programmatically using `UIBezierPath` and Core Graphics within a custom `UIView`. This demonstrates a deep understanding of iOS's drawing system and results in a lightweight, performant component.
 *   **MVVM + Coordinator for Clean Navigation**: Navigation logic is abstracted away into a `MainCoordinator`. This makes the `UIViewControllers` simpler and more reusable, while also making the app's flow more declarative and easier to modify.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📬 Contact
+## Contact
 
 Created by **Elisha Kidenge Odhiambo** – Feel free to contact me!
 
