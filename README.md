@@ -13,3 +13,5 @@
 ## Getting Started
 - Clone or download
 - Build and Run
+
+In my iFinanceTracker iOS app, the Model consists of Core Data entities and API data, the View is built using UIKit screens, and the ViewModel manages the business logic, fetching and formatting data before presenting it to the UI.
